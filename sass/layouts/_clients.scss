@@ -1,0 +1,27 @@
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 60px;
+            padding-bottom: 60px;
+    }
+
+         @media screen and (min-width: 1200px) {
+             padding-top: 94px;
+             padding-bottom: 94px;
+         }
+}
+
+.list-icon-client {
+    display: flex;
+    &__item:not(:last-child) {
+    margin-right: 30px;
+}
+&__link:hover,
+&__link:focus {
+    border-color: var(--background-button-color);
+    color: var(--background-button-color);
+}
+}
+

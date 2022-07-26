@@ -1,0 +1,34 @@
+.container {
+    padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+ @media screen and (min-width: 480px) {
+  max-width: 480px;
+ }
+
+ @media screen and (min-width: 480px) {
+   max-width: 480px;
+}
+
+@media screen and (min-width: 480px) {
+  max-width: 480px;
+   }
+ }
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.doing-container {
+  display: flex;
+  margin-top: 50px;
+  &__item {
+    position: relative;
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+    position: relative;
+  }
+}
