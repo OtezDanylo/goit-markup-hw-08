@@ -189,7 +189,6 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
-
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -205,6 +204,7 @@ img {
     width: 1200px;
   }
 }
+
 .container-header {
   display: flex;
   align-items: center;
@@ -716,9 +716,23 @@ img {
 
 .list-icon-client {
   display: flex;
+  flex-wrap: wrap;
 }
 .list-icon-client__item:not(:last-child) {
-  margin-right: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  flex-basis: 50%;
+}
+@media screen and (min-width: 768px) {
+  .list-icon-client__item:not(:last-child) {
+    flex-basis: 33.3333333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-icon-client__item:not(:last-child) {
+    margin-right: 30px;
+    flex-basis: 0%;
+  }
 }
 .list-icon-client__link:hover, .list-icon-client__link:focus {
   border-color: var(--background-button-color);
