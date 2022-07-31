@@ -230,6 +230,11 @@ img {
 .section-doing {
   padding-top: 0;
 }
+@media screen and (max-width: 1200px) {
+  .section-doing {
+    display: none;
+  }
+}
 
 .social-media {
   display: flex;
@@ -288,12 +293,12 @@ img {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  width: 696px;
+  width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
   color: var(--white);
@@ -627,10 +632,20 @@ img {
   justify-content: center;
   color: var(--icons);
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: var(--icons) solid 1px;
   border-radius: 4px;
+}
+@media screen and (min-width: 768px) {
+  .list-icon-client__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .list-icon-client__link {
+    width: 170px;
+  }
 }
 
 .underheader {
@@ -992,17 +1007,32 @@ img {
 
 .team-space {
   display: flex;
-  margin-top: 50px;
   fill: currentColor;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+@media screen and (min-width: 768px) {
+  .team-space {
+    width: 768px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-space {
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .team-space__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
-}
-.team-space__item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .teamdiv-names {
@@ -1023,6 +1053,7 @@ img {
 
 .benefits-list {
   display: flex;
+  flex-wrap: wrap;
   color: var(--p-color);
 }
 .benefits-list__icons {
