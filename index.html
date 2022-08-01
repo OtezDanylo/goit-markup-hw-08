@@ -6,74 +6,83 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WebStudio</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="../css/main.min.css" />
-        <link rel="stylesheet" href="../styles/style.css" />
-        </head>
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../css/main.min.css" />
+  <link rel="stylesheet" href="../styles/style.css" />
+</head>
 
 <body>
   <!-- Шапка -->
-  <!-- <header class="header">
+  <header class="header">
     <div class="container container-header">
       <a href="./index.html" class="header-web__link link">Web<span class="header-web__studio">Studio</span></a>
-      <nav>
-        <ul class="header-list list">
-          <li class="header-list__item">
-            <a href="./index.html" class="current-pages pages link">
-              Студия</a>
+      <button type="button" class="menu-button "data-menu-button>
+          <svg  width="40" height="40" aria-label="Перемикач мобільного меню" >
+            <use class="menu-icon" href="./images/burger.svg#icon-burger" ></use>
+            <use class="cross-icon" href="./images/modal-window.svg#icon-cross" ></use>
+          </svg>
+        </button>
+        
+                <div class="mobile-menu" data-menu>
+        <nav>
+                    <ul class="header-list list">
+            <li class="header-list__item">
+              <a href="./index.html" class="current-pages pages link">
+                Студия</a>
+            </li>
+            <li class="header-list__item">
+              <a href="./portfolio.html" class="pages link">Портфолио</a>
+            </li>
+            <li class="header-list__item">
+              <a href="./contacts.html" class="pages link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-list-contacts list">
+          <li class="contacts-list__item">
+            <a href="mailto:info@devstudio.comlink" class="contacts"><svg class="header-media-icon icon" width="16"
+                height="12">
+                <use href="./images/symbol-defs-contacts.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
           </li>
-          <li class="header-list__item">
-            <a href="./portfolio.html" class="pages link">Портфолио</a>
-          </li>
-          <li class="header-list__item">
-            <a href="./contacts.html" class="pages link">Контакты</a>
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111link" class="contacts" href="./images/symbol-defs.svg#icon-tel">
+              <svg class="header-media-icon icon" width="10" height="16">
+                <use href="./images/symbol-defs-contacts.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-      <ul class="header-list-contacts list">
-        <li class="contacts-list__item">
-          <a href="mailto:info@devstudio.comlink" class="contacts"><svg class="header-media-icon icon" width="16"
-              height="12">
-              <use href="./images/symbol-defs-contacts.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="contacts-list__item">
-          <a href="tel:+380961111111link" class="contacts" href="./images/symbol-defs.svg#icon-tel">
-            <svg class="header-media-icon icon" width="10" height="16">
-              <use href="./images/symbol-defs-contacts.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </div>
-  </header> -->
+  </header>
 
   <main>
     <!-- Заголовок -->
     <section class="underheader">
       <div class="container ">
         <h1 class="heading">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="head-button" data-modal-open>Заказать услугу</button>
+        <button type="button" class="head-button" data-modal-open>Заказать услугу</button>
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
-              <button type="button" class="cross-button" data-modal-close>
-                <svg class="cross-svg">
-                  <use href="./images/modal-window.svg#icon-cross"></use>
-                </svg>
-              </button>
-             <p class="modal-txt">Оставьте свои данные, мы вам перезвоним</p>
-            <form name="name"class="modal-contacts " >
+            <button type="button" class="cross-button" data-modal-close>
+              <svg class="cross-svg">
+                <use href="./images/modal-window.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <p class="modal-txt">Оставьте свои данные, мы вам перезвоним</p>
+            <form name="name" class="modal-contacts ">
               <label for="modal" class="modal-lable">
                 <p class="modal-p">Имя</p>
                 <span class="modal__icon-span"> <svg class="modal-svg">
-                  <use href="./images/symbol-defs-modal.svg#icon-man"></use>
-                </svg></span>
-              <input type="text" name="tel" class="modal-input">
+                    <use href="./images/symbol-defs-modal.svg#icon-man"></use>
+                  </svg></span>
+                <input type="text" name="tel" class="modal-input">
               </label>
               <label for="modal" class="modal-lable">
                 <p class="modal-p">Телефон</p>
@@ -89,20 +98,20 @@
                   </svg></span>
                 <input type="email" name="modal" class="modal-input">
               </label>
-              <textarea name="comment" id="comment"  placeholder="Введите текст" class="modal-comment" ></textarea>
-                              <label class="checkbox-label">
-                                <input type="checkbox" class="checkbox " name="checkbox"> 
-                                <span class="modal-icon"> <svg class="agree-icon">
-                                  <use href="./images/symbol-defs-modal.svg#icon-agree"></use>
-                                </svg></span>
-                                Соглашаюсь с рассылкой и принимаю <a href="" class="terms">Условия договора</a> 
-                              </label>
-                          <button type="submit" class="modal-button">Отправить</button>
-                     </form>
+              <textarea name="comment" id="comment" placeholder="Введите текст" class="modal-comment"></textarea>
+              <label class="checkbox-label">
+                <input type="checkbox" class="checkbox " name="checkbox">
+                <span class="modal-icon"> <svg class="agree-icon">
+                    <use href="./images/symbol-defs-modal.svg#icon-agree"></use>
+                  </svg></span>
+                Соглашаюсь с рассылкой и принимаю <a href="" class="terms">Условия договора</a>
+              </label>
+              <button type="submit" class="modal-button">Отправить</button>
+            </form>
           </div>
         </div>
       </div>
-    </section> 
+    </section>
     <!-- Чому ми?  -->
     <section class="section">
       <div class="container">
@@ -153,7 +162,7 @@
     </section>
 
     <!-- Чим ми займаємось -->
-   <section class="section section-doing">
+    <section class="section section-doing">
       <div class="container">
         <h2 class="doing">Чем мы занимаемся</h2>
         <ul class="doing-container list">
@@ -171,9 +180,9 @@
           </li>
         </ul>
       </div>
-    </section> 
+    </section>
     <section class="team-background section">
-       <div class="container">
+      <div class="container">
         <!-- Our Team -->
         <h2 class="our-team">Наша команда</h2>
         <ul class="team-space list">
@@ -315,7 +324,7 @@
         </ul>
         </ul>
       </div>
-    </section> 
+    </section>
     <section class="clients section">
       <div class="container">
         <h2 class="our-clients">Постоянные клиенты</h2>
@@ -341,7 +350,7 @@
       </div>
     </section>
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container">
       <div><a href="./index.html" class="Web-footer link">Web<span class="studio link">Studio</span></a>
         <address class="address">
@@ -391,8 +400,9 @@
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
   <script src="./modal.js"></script>
+  <script src="./menu.js"></script>
 </body>
 
 </html>
