@@ -7,6 +7,11 @@
     line-height: 1.19;
     color: var(--background-button-color);
     margin-right: 90px;
+
+}
+
+.mobile-menu.is-open .header-web__link {
+  display: none;
 }
 
 .header-web__studio {
