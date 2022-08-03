@@ -40,6 +40,8 @@ background-color: var(--background-button-color);
   @media screen and (max-width: 767px) {
     width: 231px;
   height: 28px;
+  font-weight: 500;
+    font-size: 24px;
 margin-bottom: 64px;
   color: var(--p-color);
   }
@@ -62,28 +64,29 @@ margin-bottom: 64px;
 
 
 .menu-socials {
-@media screen and (max-width: 767px) {
-   &__list {
+
+&__list {
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+&__item {
+  color: var(--background-button-color);
+}
+
+&__item:not(:last-child) &__link {
+  margin-right: 20px;
+  padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+
+ @media screen and (min-width: 768px) {
+  display: none;
   
-     display: flex;
-
-
-  &__item:not(:last-child) {
-    margin-right: 20px;
- 
 }
 
-&__link {
-      font-size: 18px;
-      
-    color: var(--background-button-color);
+}
 
-    &:not(:last-child) {
-      padding-right: 10px;
-     border-right: 1px solid  ;
-    }
-  }
-}
-}
- 
-}

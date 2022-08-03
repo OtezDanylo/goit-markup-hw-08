@@ -66,6 +66,10 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     color: var(--white);
+@media screen and (max-width: 767px) {
+  margin-top: 60px;
+}
+
 }
 
 .email-txt {
@@ -75,4 +79,8 @@
 
     margin-bottom: 20px;
     color: var(--white);
+
+    @media screen and (max-width: 767px) {
+      margin-top: 60px;
+    }
 }
