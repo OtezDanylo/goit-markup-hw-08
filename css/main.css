@@ -1008,15 +1008,15 @@ x .contacts:hover, .contacts:focus {
   color: var(--white);
   padding: 91px 23px 35px 25px;
 }
+@media screen and (max-width: 767px) {
+  .overlay-text {
+    padding: 20px 77px 24px 24px;
+  }
+}
 
 .porfolio-link:hover .overlay-text,
 .porfolio-link:focus .overlay-text {
   transform: translateY(0%);
-}
-
-.porfolio-link {
-  display: block;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .porfolio-link:hover,
@@ -1301,12 +1301,10 @@ x .contacts:hover, .contacts:focus {
   background-color: var(--colorf5f4);
   padding-bottom: 94px;
 }
-
-.padding-names {
-  padding: 20px 24px;
-  border: 1px var(--border) solid;
-  border-top: none;
-  fill: currentColor;
+@media screen and (min-width: 768px) {
+  .team-background {
+    width: 768px;
+  }
 }
 
 .benefits-list {
@@ -1339,19 +1337,30 @@ x .contacts:hover, .contacts:focus {
 
 .nav-list {
   display: flex;
+  justify-content: center;
   margin-bottom: 50px;
 }
+
 @media screen and (max-width: 767px) {
-  .nav-list {
-    flex-wrap: wrap;
+  .images-list {
+    justify-content: center;
   }
 }
-
-.images-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
+@media screen and (min-width: 768px) {
+  .images-list {
+    width: 768px;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .images-list {
+    width: 1200px;
+    flex-basis: 33.3333333333%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-right: -30px;
+  }
 }
 
 .images-list > .images-list-item {
@@ -1359,8 +1368,10 @@ x .contacts:hover, .contacts:focus {
   margin-bottom: 30px;
   margin-right: 30px;
 }
-@media screen and (min-width: 768px) {
-  .images-list > .images-list-item {
-    flex-basis: 50%;
-  }
+
+.padding-names {
+  padding: 20px 24px;
+  border: 1px var(--border) solid;
+  border-top: none;
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */

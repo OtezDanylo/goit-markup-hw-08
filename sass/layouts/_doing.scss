@@ -26,6 +26,10 @@
   letter-spacing: 0.03em;
   color: var(--white);
   padding: 91px 23px 35px 25px;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 77px 24px 24px;
+  }
 }
 
 .porfolio-link:hover .overlay-text,
@@ -33,10 +37,7 @@
   transform: translateY(0%);
 }
 
-.porfolio-link {
-  display: block;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .porfolio-link:hover,
 .porfolio-link:focus {
