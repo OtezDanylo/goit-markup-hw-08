@@ -112,8 +112,8 @@ img {
   font-size: 16px;
   line-height: 30px;
   margin-top: 30px;
-  margin-left: 164px;
-  margin-right: 164px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,6 +127,13 @@ img {
   height: 50px;
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal-button {
+    width: 175px;
+    height: 40px;
+    margin-top: 0;
+  }
 }
 .modal-button:hover, .modal-button:focus {
   background-color: #188CE8;
@@ -306,16 +313,10 @@ img {
 .contacts-list__item:not(:last-child) {
   margin-right: 50px;
 }
-@media screen and (max-width: 767px) {
-  .contacts-list__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
-}
 
 .menu-socials__list {
   display: flex;
   padding-left: 40px;
-  padding-bottom: 48px;
   flex-wrap: wrap;
 }
 .menu-socials__item {
@@ -340,6 +341,7 @@ img {
   line-height: 1.14;
 }
 .uppercase-why {
+  justify-content: center;
   margin-bottom: 10px;
   color: var(--twentyone);
 }
@@ -455,6 +457,11 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--p-color);
+}
+@media screen and (max-width: 767px) {
+  .why {
+    width: 100%;
+  }
 }
 
 .team-names {
@@ -640,7 +647,7 @@ x .contacts:hover, .contacts:focus {
 }
 
 .modal-comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -959,6 +966,11 @@ x .contacts:hover, .contacts:focus {
   display: flex;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 450px) {
+  .list-icon-client {
+    justify-content: center;
+  }
+}
 .list-icon-client__item:not(:last-child) {
   text-align: center;
   margin-bottom: 30px;
@@ -1032,6 +1044,11 @@ x .contacts:hover, .contacts:focus {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 320px) {
+  .footer .container {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   .footer .container {
     flex-direction: column;
@@ -1082,6 +1099,11 @@ x .contacts:hover, .contacts:focus {
     margin-left: 70px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .div-footer {
+    margin-bottom: 65px;
+  }
+}
 
 .mail-form {
   display: flex;
@@ -1105,13 +1127,13 @@ x .contacts:hover, .contacts:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .modal {
+    width: 290px;
+  }
+}
 .modal-lable:focus-within .modal-svg, .modal-lable:hover .modal-svg {
   fill: var(--background-button-color);
-}
-@media screen and (max-width: 767px) {
-  .modal {
-    width: 100%;
-  }
 }
 
 .overlay {
@@ -1212,9 +1234,14 @@ x .contacts:hover, .contacts:focus {
 }
 
 .modal-contacts {
-  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .modal-contacts {
+    display: flex;
+  }
 }
 
 .email input {
@@ -1250,7 +1277,7 @@ x .contacts:hover, .contacts:focus {
   position: relative;
 }
 .modal-lable input {
-  width: 448px;
+  width: 100%;
   height: 40px;
   margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1289,8 +1316,12 @@ x .contacts:hover, .contacts:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
-  margin-right: 30px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .team-space__item {
+    margin-right: 30px;
+  }
 }
 
 .teamdiv-names {
@@ -1300,11 +1331,6 @@ x .contacts:hover, .contacts:focus {
 .team-background {
   background-color: var(--colorf5f4);
   padding-bottom: 94px;
-}
-@media screen and (min-width: 768px) {
-  .team-background {
-    width: 768px;
-  }
 }
 
 .benefits-list {
@@ -1323,22 +1349,36 @@ x .contacts:hover, .contacts:focus {
   height: 120px;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 767px) {
+  .benefits-list__icons {
+    width: 100%;
+  }
+}
 
 .benefits-list__item {
+  justify-content: center;
   display: block;
-}
-.benefits-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.nav-list-item:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 768px) {
+  .nav-list-item:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .nav-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 767px) {
+  .nav-list {
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1364,11 +1404,8 @@ x .contacts:hover, .contacts:focus {
 }
 
 .images-list > .images-list-item {
-  width: 370px;
   margin-bottom: 30px;
-  margin-right: 30px;
 }
-
 .padding-names {
   padding: 20px 24px;
   border: 1px var(--border) solid;

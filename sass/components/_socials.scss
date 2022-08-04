@@ -55,11 +55,7 @@ margin-bottom: 64px;
 
 .contacts-list__item:not(:last-child) {
   margin-right: 50px;
-  
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
-  }
-
+ 
 }
 
 
@@ -68,7 +64,6 @@ margin-bottom: 64px;
 &__list {
   display: flex;
   padding-left: 40px;
-  padding-bottom: 48px;
   flex-wrap: wrap;
 }
 
