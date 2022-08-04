@@ -210,6 +210,11 @@ img {
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -225,6 +230,11 @@ img {
   display: flex;
   align-items: center;
   height: 60px;
+}
+@media screen and (min-width: 480px) {
+  .container-header {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container-header {
@@ -251,8 +261,14 @@ img {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-doing {
@@ -296,27 +312,27 @@ img {
   color: var(--white);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .contacts {
-    width: 231px;
     height: 28px;
     font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 64px;
+    font-size: 14px;
     color: var(--p-color);
+  }
+}
+@media screen and (min-width: 1199px) {
+  .contacts-list__item {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .contacts:hover .social-media__icon, .contacts:focus .social-media__icon {
   fill: var(--background-button-color);
 }
 
-.contacts-list__item:not(:last-child) {
-  margin-right: 50px;
-}
-
 .menu-socials__list {
+  margin-bottom: 28px;
   display: flex;
-  padding-left: 40px;
   flex-wrap: wrap;
 }
 .menu-socials__item {
@@ -341,7 +357,7 @@ img {
   line-height: 1.14;
 }
 .uppercase-why {
-  justify-content: center;
+  text-align: center;
   margin-bottom: 10px;
   color: var(--twentyone);
 }
@@ -458,6 +474,11 @@ img {
   letter-spacing: 0.03em;
   color: var(--p-color);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .why {
+    width: 354px;
+  }
+}
 @media screen and (max-width: 767px) {
   .why {
     width: 100%;
@@ -496,12 +517,26 @@ img {
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.71;
   letter-spacing: 0.02em;
   color: var(--p-color);
 }
-x .contacts:hover, .contacts:focus {
+@media screen and (max-width: 767px) {
+  .contacts {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    height: 28px;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--p-color);
+  }
+}
+.contacts:hover, .contacts:focus {
   color: var(--background-button-color);
 }
 
@@ -582,6 +617,11 @@ x .contacts:hover, .contacts:focus {
   letter-spacing: 0.03em;
   color: var(--twentyone);
 }
+@media screen and (max-width: 1199px) {
+  .our-team {
+    font-size: 28px;
+  }
+}
 
 .our-clients {
   font-family: "Roboto";
@@ -591,6 +631,11 @@ x .contacts:hover, .contacts:focus {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1199px) {
+  .our-clients {
+    font-size: 28px;
+  }
 }
 
 .footer-input {
@@ -686,11 +731,6 @@ x .contacts:hover, .contacts:focus {
   border-radius: 50%;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (max-width: 767px) {
-  .cross-svg {
-    border: none;
-  }
-}
 
 .icon {
   fill: currentColor;
@@ -744,6 +784,12 @@ x .contacts:hover, .contacts:focus {
   }
 }
 
+.portfolio-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .mobile-menu {
   display: flex;
   align-items: center;
@@ -751,9 +797,8 @@ x .contacts:hover, .contacts:focus {
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    transform: translateX(100%);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     display: none;
+    padding: 40px 40px 0 40px;
   }
   .mobile-menu.is-open {
     position: fixed;
@@ -866,8 +911,10 @@ x .contacts:hover, .contacts:focus {
   fill: currentColor;
 }
 
-.nav {
-  margin-bottom: auto;
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: auto;
+  }
 }
 
 .header-list {
@@ -876,11 +923,8 @@ x .contacts:hover, .contacts:focus {
 @media screen and (max-width: 767px) {
   .header-list {
     flex-direction: column;
-    padding-top: 48px;
-    padding-left: 40px;
   }
   .header-list-contacts {
-    padding-left: 40px;
     flex-direction: column-reverse;
     width: 100%;
   }
@@ -993,8 +1037,6 @@ x .contacts:hover, .contacts:focus {
 }
 
 .images-list-item {
-  overflow: hidden;
-  position: relative;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1039,15 +1081,11 @@ x .contacts:hover, .contacts:focus {
 .footer {
   background-color: var(--footer);
   padding: 60px 0;
+  text-align: center;
 }
 .footer .container {
   display: flex;
   align-items: center;
-}
-@media screen and (min-width: 320px) {
-  .footer .container {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 767px) {
   .footer .container {
@@ -1114,6 +1152,10 @@ x .contacts:hover, .contacts:focus {
   }
 }
 
+.email {
+  margin-top: 60px;
+}
+
 .modal {
   padding: 40px;
   position: absolute;
@@ -1127,7 +1169,7 @@ x .contacts:hover, .contacts:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .modal {
     width: 290px;
   }
@@ -1338,6 +1380,7 @@ x .contacts:hover, .contacts:focus {
   flex-wrap: wrap;
   justify-content: center;
   color: var(--p-color);
+  gap: 30px;
 }
 .benefits-list__icons {
   display: flex;
@@ -1348,6 +1391,11 @@ x .contacts:hover, .contacts:focus {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .benefits-list__icons {
+    width: 354px;
+  }
 }
 @media screen and (max-width: 767px) {
   .benefits-list__icons {
@@ -1370,7 +1418,7 @@ x .contacts:hover, .contacts:focus {
 .nav-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
   .nav-list {
@@ -1386,15 +1434,8 @@ x .contacts:hover, .contacts:focus {
     justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
-  .images-list {
-    width: 768px;
-    width: 50%;
-  }
-}
 @media screen and (min-width: 1200px) {
   .images-list {
-    width: 1200px;
     flex-basis: 33.3333333333%;
     display: flex;
     flex-wrap: wrap;
@@ -1403,12 +1444,20 @@ x .contacts:hover, .contacts:focus {
   }
 }
 
-.images-list > .images-list-item {
-  margin-bottom: 30px;
+.images-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+
+.images-list > .images-list-item {
+  width: 354px;
+}
+
 .padding-names {
   padding: 20px 24px;
   border: 1px var(--border) solid;
   border-top: none;
   fill: currentColor;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */
