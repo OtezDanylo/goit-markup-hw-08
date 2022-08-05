@@ -800,7 +800,6 @@ img {
 .portfolio-link {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 .mobile-menu {
@@ -1342,7 +1341,7 @@ img {
 }
 
 .email input {
-  width: 320px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1353,7 +1352,7 @@ img {
   color: var(--white);
   outline: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .email input {
     width: 450px;
   }
@@ -1427,6 +1426,11 @@ img {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .team-space__item {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team-space__item {
     margin-right: 15px;
@@ -1478,9 +1482,6 @@ img {
 .benefits-list__item {
   justify-content: center;
   display: block;
-}
-.benefits-list__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1534,12 +1535,15 @@ img {
   gap: 30px;
 }
 
-.images-list > .images-list-item {
-  width: 354px;
+@media screen and (max-width: 767px) {
+  .images-list > .images-list-item {
+    width: 100%;
+  }
 }
 
 .padding-names {
   padding: 20px 24px;
   border: 1px var(--border) solid;
   border-top: none;
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */

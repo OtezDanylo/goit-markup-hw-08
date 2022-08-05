@@ -50,14 +50,15 @@ gap: 30px;
 }
 
 .images-list>.images-list-item {
-  width: 354px;
-  
+  @media screen and (max-width: 767px) {
+     width: 100%;
+  }
 }
 
 .padding-names {
   padding: 20px 24px;
   border: 1px var(--border) solid;
   border-top: none;
- 
+ flex-grow: 1;
  
 }
