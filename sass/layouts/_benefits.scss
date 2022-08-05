@@ -29,8 +29,10 @@
 .benefits-list__item {
  justify-content: center;
   display: block;
-margin-bottom: 30px;
 
+  &:not(:last-child){
+margin-bottom: 30px;
+  }
 
   
 }

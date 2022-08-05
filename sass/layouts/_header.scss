@@ -8,12 +8,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
+  padding: 118px 0;
+  max-width: 480px;
+  height: 400px;
   margin: 0 auto;
 
   @media screen and (min-resolusion: 2dppx) {
+    max-width: 480px;
     background-color: var(--underheader);
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
@@ -21,16 +22,18 @@
       url(../images/img-480x2px.jpg);
   }
 
-  @media screen and (min-width: 577px) {
+  @media screen and (min-width: 480px) {
+    max-width: 768px;
     background-color: var(--underheader);
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
       url(../images/tablet-header.jpg);
 
-    @media screen and (min-resolution: 2dppx) and (max-width: 961px) {
+    @media screen and (min-resolution: 2dppx) and (max-width: 959px) {
+      max-width: 1199px;
       background-color: var(--underheader);
-      background-image: linear-gradient(to right,
+           background-image: linear-gradient(to right,
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
         url(../images/tablet-headerx2.jpg);
@@ -39,6 +42,7 @@
   }
 
   @media screen and (min-width: 960px) {
+    max-width: 1600px;
     background-image: linear-gradient(to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
@@ -53,7 +57,10 @@
 
   }
 
-
+ @media screen and (min-width: 1200px) {
+padding: 200px 0;
+    min-height: 600px;
+ }
 
 }
 
@@ -114,8 +121,8 @@
 
 .pages {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: block;
 
   font-family: "Roboto";
@@ -139,8 +146,8 @@
 }
 
 .current-pages {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   position: relative;
   color: var(--background-button-color);
 
